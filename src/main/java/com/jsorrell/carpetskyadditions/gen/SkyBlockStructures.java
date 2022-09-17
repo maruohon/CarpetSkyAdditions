@@ -1,7 +1,14 @@
 package com.jsorrell.carpetskyadditions.gen;
 
+import java.util.Objects;
+import javax.annotation.Nullable;
+import com.jsorrell.carpetskyadditions.settings.SkyAdditionsSettings;
 import com.jsorrell.carpetskyadditions.util.SkyAdditionsIdentifier;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.EndPortalFrameBlock;
+import net.minecraft.block.SculkShriekerBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.MobSpawnerBlockEntity;
 import net.minecraft.entity.EntityType;
@@ -15,9 +22,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.ServerWorldAccess;
-
-import javax.annotation.Nullable;
-import java.util.Objects;
 
 
 public class SkyBlockStructures {
@@ -213,7 +217,8 @@ public class SkyBlockStructures {
 
   public record SpawnPlatform(BlockPos worldSpawn) {
     public void generate(ServerWorldAccess world, Random random) {
-      StructureTemplate structure = Objects.requireNonNull(world.getServer()).getStructureTemplateManager().getTemplate(new SkyAdditionsIdentifier("spawn_platform")).orElseThrow();
+      String structureName = SkyAdditionsSettings.renewableNylium ? "spawn_platform" : "spawn_platform_nylium";
+      StructureTemplate structure = Objects.requireNonNull(world.getServer()).getStructureTemplateManager().getTemplate(new SkyAdditionsIdentifier(structureName)).orElseThrow();
       BlockPos structureOrigin = worldSpawn.subtract(new BlockPos(4, 1, 1));
       structure.place(world, structureOrigin, worldSpawn, new StructurePlacementData(), random, Block.NOTIFY_LISTENERS);
     }

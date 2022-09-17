@@ -84,6 +84,10 @@ public class SkyAdditionsSettings {
 
   @Rule(categories = {FEATURE})
   @SkyAdditionsSetting("true")
+  public static boolean renewableNylium = false;
+
+  @Rule(categories = {FEATURE})
+  @SkyAdditionsSetting("true")
   public static boolean renewableSwiftSneak = false;
 
 

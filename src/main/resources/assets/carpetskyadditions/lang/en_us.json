@@ -13,6 +13,7 @@
   "carpetskyadditions.rule.renewableEchoShards.desc": "Creatures with Echolocation Drop Echo Shards when Killed with Sonic Booms",
   "carpetskyadditions.rule.renewableHeartsOfTheSea.desc": "Dolphins can find a heart of the sea when given fish",
   "carpetskyadditions.rule.renewableNetherrack.desc": "Netherrack generates as part of Nether Portals spawned floating",
+  "carpetskyadditions.rule.renewableNylium.desc": "One block of Crimson and Warped Nylium generates as part of floating Nether Portals",
   "carpetskyadditions.rule.renewableSwiftSneak.desc": "Enchanting Tables Near Wardens can Enchant Items with Swift Sneak",
 
   "carpetskyadditions.rule.coralErosion.desc": "Dead Coral with Water flowing out of it erodes into Sand",
@@ -31,6 +32,7 @@
 
   "carpetskyadditions.rule.renewableDeepslate.extra.0": "either by clicking/dispensing them or with splash potions",
   "carpetskyadditions.rule.renewableDeepslate.extra.1": "With no_splash: splash potion conversion is disabled",
+  "carpetskyadditions.rule.renewableNylium.extra.0": "Note that this also requires renewableNetherrack to be enabled",
   "carpetskyadditions.rule.maxWanderingTraderSpawnChance.extra.0": "This starts at 0.025 and increases by 0.025 each time a trader spawn fails",
   "carpetskyadditions.rule.maxWanderingTraderSpawnChance.extra.1": "until the max chance is reached.",
 
