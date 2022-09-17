@@ -1,3 +1,38 @@
 {
+  "carpetskyadditions.rule.generateAncientCityPortals.desc": "Generate Ancient City Portals",
+  "carpetskyadditions.rule.generateEndPortals.desc": "Generates End Portals",
+  "carpetskyadditions.rule.generateMagmaCubeSpawners.desc": "Generates Magma Cube Spawners",
+  "carpetskyadditions.rule.generateRandomEndGateways.desc": "Generate Random End Gateways",
+  "carpetskyadditions.rule.generateSilverfishSpawners.desc": "Generates Silverfish Spawners",
+
+  "carpetskyadditions.rule.renewableAllays.desc": "Vexes can be converted into Allays with music",
+  "carpetskyadditions.rule.renewableBuddingAmethysts.desc": "Surrounding lava by calcite and smooth basalt forms budding amethysts",
+  "carpetskyadditions.rule.renewableDeepslate.desc": "Stone can be converted into deepslate with thick potions",
+  "carpetskyadditions.rule.renewableDiamonds.desc": "An Anvil falling on a full stack of Coal Blocks compacts it into a Diamond",
+  "carpetskyadditions.rule.renewableDragonHeads.desc": "Ender Dragons killed by Charged Creepers drop their heads",
+  "carpetskyadditions.rule.renewableEchoShards.desc": "Creatures with Echolocation Drop Echo Shards when Killed with Sonic Booms",
+  "carpetskyadditions.rule.renewableHeartsOfTheSea.desc": "Dolphins can find a heart of the sea when given fish",
+  "carpetskyadditions.rule.renewableNetherrack.desc": "Netherrack generates as part of Nether Portals spawned floating",
+  "carpetskyadditions.rule.renewableSwiftSneak.desc": "Enchanting Tables Near Wardens can Enchant Items with Swift Sneak",
+
+  "carpetskyadditions.rule.coralErosion.desc": "Dead Coral with Water flowing out of it erodes into Sand",
+  "carpetskyadditions.rule.foxesSpawnWithSweetBerriesChance.desc": "A spawned Fox has a chance to hold Sweet Berries",
+  "carpetskyadditions.rule.gatewaysSpawnChorus.desc": "Chorus Plants generate with End Gateways in void",
+  "carpetskyadditions.rule.hugeMushroomsSpreadMycelium.desc": "Huge Mushrooms nearby convert soil to Mycelium",
+  "carpetskyadditions.rule.lavaFromWanderingTrader.desc": "Lets the Wandering Trader sell Lava, the old method",
+  "carpetskyadditions.rule.lightningElectrifiesVines.desc": "Lightning striking glowstone with attached vines converts them to glow lichen",
+  "carpetskyadditions.rule.maxWanderingTraderSpawnChance.desc": "Max wandering trader spawn chance",
+  "carpetskyadditions.rule.poisonousPotatoesConvertSpiders.desc": "Spiders convert into Cave Spiders when given Poisonous Potatoes",
+  "carpetskyadditions.rule.rammingWart.desc": "A Goat ramming a Nether Wart Block will break it apart",
+  "carpetskyadditions.rule.saplingsDieOnSand.desc": "Saplings on Sand eventually turn into Dead Bushes",
+  "carpetskyadditions.rule.shulkerSpawnsOnDragonKill.desc": "Shulkers spawn on obsidian pillar when Ender Dragon is re-killed",
+  "carpetskyadditions.rule.tallFlowersFromWanderingTrader.desc": "Add Tall Flower trades to the Wandering Trader",
+  "carpetskyadditions.rule.wanderingTraderSpawnRate.desc": "How often the wandering trader attempts to spawn in ticks",
+
+  "carpetskyadditions.rule.renewableDeepslate.extra.0": "either by clicking/dispensing them or with splash potions",
+  "carpetskyadditions.rule.renewableDeepslate.extra.1": "With no_splash: splash potion conversion is disabled",
+  "carpetskyadditions.rule.maxWanderingTraderSpawnChance.extra.0": "This starts at 0.025 and increases by 0.025 each time a trader spawn fails",
+  "carpetskyadditions.rule.maxWanderingTraderSpawnChance.extra.1": "until the max chance is reached.",
+
   "generator.carpetskyadditions.skyblock": "SkyBlock"
 }
