@@ -13,8 +13,11 @@ import net.minecraft.block.Blocks;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.BlockLocating;
 import net.minecraft.world.PortalForcer;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeKeys;
 
 @Mixin(PortalForcer.class)
 public class PortalForcerMixin {
@@ -42,11 +45,26 @@ public class PortalForcerMixin {
         int x = blockPos.getX() + direction.getOffsetX() * -2;
         int y = blockPos.getY() - 1;
         int z = blockPos.getZ() + direction.getOffsetZ() * -2;
-        world.setBlockState(mutablePos.set(x, y, z), Blocks.CRIMSON_NYLIUM.getDefaultState());
+        this.setNyliumBlock(mutablePos.set(x, y, z));
 
         x = blockPos.getX() + direction.getOffsetX() * 3;
         z = blockPos.getZ() + direction.getOffsetZ() * 3;
-        world.setBlockState(mutablePos.set(x, y, z), Blocks.WARPED_NYLIUM.getDefaultState());
+        this.setNyliumBlock(mutablePos.set(x, y, z));
+      }
+    }
+  }
+
+  private void setNyliumBlock(BlockPos pos) {
+    Optional<RegistryKey<Biome>> optional = world.getBiome(pos).getKey();
+
+    if (optional.isPresent()) {
+      RegistryKey<Biome> biomeKey = optional.get();
+
+      if (biomeKey.equals(BiomeKeys.CRIMSON_FOREST)) {
+        world.setBlockState(pos, Blocks.CRIMSON_NYLIUM.getDefaultState());
+      }
+      else if (biomeKey.equals(BiomeKeys.WARPED_FOREST)) {
+        world.setBlockState(pos, Blocks.WARPED_NYLIUM.getDefaultState());
       }
     }
   }
